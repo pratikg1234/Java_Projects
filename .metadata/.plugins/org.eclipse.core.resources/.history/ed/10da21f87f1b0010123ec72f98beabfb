@@ -1,0 +1,11 @@
+package com.main;
+
+public class HelloWorld {
+	
+	public String greet(String name) {
+		return "Hello: "+name;
+	}
+	public int sum(int i, int j) {
+		return i+j;
+	}
+}

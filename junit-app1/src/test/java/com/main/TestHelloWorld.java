@@ -1,0 +1,45 @@
+package com.main;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TestHelloWorld {
+	
+	HelloWorld hw =null;
+	
+	@BeforeEach
+	public void init() {
+		hw =new HelloWorld();
+	}
+	
+	@AfterEach
+	public void cleanup() {
+		hw =null;
+	}
+	
+	@Test
+	public void testGreet() {
+		String res = hw.greet("Scott");
+		assertEquals("Hello: Scott",res);
+	}
+	
+	@Test
+	public void testSum() {
+		int res =hw.sum(10, 20);
+		assertEquals(30, res);
+	}
+	
+	@Test
+	public void testGreetThrowsIllegal() {
+		//assertThrows(p1,p2)
+		//assertThrows(here we mention the .class filename of the exception class
+		//that we expect to be raised when the name is empty,
+		//here we write a lamdaexpression
+		
+		assertThrows(IllegalArgumentException.class, ()->hw.greet(""));
+	}
+
+}

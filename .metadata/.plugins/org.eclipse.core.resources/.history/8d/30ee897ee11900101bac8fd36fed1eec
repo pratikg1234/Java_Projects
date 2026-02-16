@@ -1,0 +1,19 @@
+package com.java8.functional;
+
+public class GreetMain1 {
+	public static void main(String[] args) {
+		Greet g1 = name->
+			System.out.println("Welcome to java lambda & functional...");
+		g1.wish("Pratik");
+		
+		callGreet1((name)->System.out.println("Hello"+name)); 
+	}
+	
+	public static void callGreet1(Greet g) {
+		g.wish("Pratik");
+	}
+	
+	public static void callGreet2() {
+		return s->System.out.println("Hello from lambda return..."+s);
+	}
+}

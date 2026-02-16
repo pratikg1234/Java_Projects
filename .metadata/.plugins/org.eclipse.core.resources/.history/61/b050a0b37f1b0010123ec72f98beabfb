@@ -1,0 +1,35 @@
+package com.main;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TestHelloWorld {
+	
+	HelloWorld hw =null;
+	
+	@BeforeEach
+	public void init() {
+		hw =new HelloWorld();
+	}
+	
+	@AfterEach
+	public void cleanup() {
+		hw =null;
+	}
+	
+	@Test
+	public void testGreet() {
+		String res = hw.greet("Scott");
+		assertEquals("Hello: Scott",res);
+	}
+	
+	@Test
+	public void testSum() {
+		int res =hw.sum(10, 20);
+		assertEquals(20, res);
+	}
+
+}

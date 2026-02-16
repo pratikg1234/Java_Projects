@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cb.prod.NamesListController&apos; to &apos;NamesListProducerController&apos;&#x0D;&#x0A;- Original project: &apos;circuitbreaker-producer&apos;&#x0D;&#x0A;- Original element: &apos;com.cb.prod.NamesListController&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cb.prod.NamesListProducerController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NamesListController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cb.prod{NamesListController.java[NamesListController" matchStrategy="1" name="NamesListProducerController" qualified="false" references="true" similarDeclarations="false" stamp="1745815924491" textual="false" version="1.0"/>
+</session>

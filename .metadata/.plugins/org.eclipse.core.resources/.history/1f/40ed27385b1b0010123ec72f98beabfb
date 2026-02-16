@@ -1,0 +1,28 @@
+package jdbcapp1com.jdbc.practice;
+
+public class JdbcExample1 {
+//	static {
+//		try {//this part is automatic
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//		} catch (ClassNotFoundException e) {
+//			e.printStackTrace();
+//		}
+//	}
+	static Connection cn;
+	
+	public static void main(String[] args) {
+		
+	}
+	public static void addRecord() {
+		
+	}
+	public static void showAllRecords() {
+		
+	}
+	public static void deleteRecord() {
+		
+	}
+	public static void updateRecord() {
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Product.java&apos; to &apos;product-consumer-app-1/src/main/java/com.boot.product.rest&apos;&#x0D;&#x0A;- Original project: &apos;product-rest-api&apos;&#x0D;&#x0A;- Destination element: &apos;product-consumer-app-1/src/main/java/com.boot.product.rest&apos;&#x0D;&#x0A;- Original element: &apos;com.boot.product.rest.dvo.Product.java&apos;" description="Copy compilation unit" destination="=product-consumer-app-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.boot.product.rest" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.boot.product.rest.dvo{Product.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1745490578385" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package com.java8.functional;
+
+import java.util.Optional;
+
+public class OptionalExample2 {
+	public static void main(String[] args) {
+		
+	}
+	public static void opex1() {
+		Optional<Integer> op1 = Optional.empty();
+		op1.ifPresent((i)-> System.out.println("i="+i));
+	}
+	
+	public static void opex2() {
+		Optional<String> op2 = Optional.ofNullable(null);
+		op2.map((s)->s.toLowerCase())
+	}
+	
+	
+}

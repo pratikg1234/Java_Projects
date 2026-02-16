@@ -1,0 +1,9 @@
+package com.streams;
+
+public class ProductDup {
+	private int prodCode;
+	private String prodName;
+	private int price;
+	private qoh;
+	private String category;
+}

@@ -1,0 +1,9 @@
+package com.java8.functional;
+
+public class GreetMain1 {
+	public static void main(String[] args) {
+		Greet g1 = name->
+			System.out.println("Welcome to java lambda & functional version 1...");
+		g1.wish("Pratik");
+	}
+}

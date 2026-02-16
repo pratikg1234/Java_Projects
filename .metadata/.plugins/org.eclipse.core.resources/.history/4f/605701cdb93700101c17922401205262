@@ -1,0 +1,5 @@
+package com.boot.rabbitmq.controller;
+
+public class MessageController {
+
+}

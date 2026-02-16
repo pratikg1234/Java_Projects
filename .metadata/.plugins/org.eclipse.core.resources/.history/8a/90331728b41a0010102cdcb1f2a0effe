@@ -1,0 +1,11 @@
+package com.streams;
+
+import java.util.stream.Stream;
+
+public class StreamDemo1 {
+	public static void main(String[] args) {
+		Stream<Integer> s1 = Stream.of(34,56,8,12,67,78);
+		s1.forEach(i->System.out.println(i));
+	}
+	
+}

@@ -1,0 +1,17 @@
+package com.streams;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ProductData {
+	public static List<ProductDup> prodList = Arrays.asList(
+			new ProductDup(101,"IPhone",2000,10,"Mobile Phones"),
+			new ProductDup(102,"S25",1900,12,"Mobile Phones"),
+			new ProductDup(103,"smart watch",2000,10,"Mobile Phones"),
+			new ProductDup(104,"IPhone",2000,10,"Mobile Phones"),
+			new ProductDup(105,"IPhone",2000,10,"Mobile Phones"),
+			new ProductDup(106,"IPhone",2000,10,"Mobile Phones"),
+			new ProductDup(107,"IPhone",2000,10,"Mobile Phones"),
+			new ProductDup(108,"IPhone",2000,10,"Mobile Phones")
+			);
+}

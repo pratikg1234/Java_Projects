@@ -1,0 +1,17 @@
+package com.java8.functional;
+
+public class GreetMain1 {
+	public static void main(String[] args) {
+		Greet g1 = new Greet(){
+			public void wish(String name) {
+				System.out.println("Welcome to cnonymous class version1...");
+			}
+		};
+	}
+	g1 = new Greet(){
+		public void wish(String name) {
+			System.out.println("Welcome to cnonymous class version2...");
+		}
+	};
+}
+}

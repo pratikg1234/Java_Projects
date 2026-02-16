@@ -1,0 +1,26 @@
+resilience4j:
+  circuitbreaker:
+    instances:
+      GetNamesBreaker:
+        register-health-indicator: true
+        sliding-window-type: count-based
+        sliding-window-size: 10  #total number of calls
+        minimum-number-of-calls: 5 
+        failure-rate-threshold: 50 # if 50% of 5 calls are failed it will go to open state
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s #after 5 seconds it will go into half_open
+        permitted-number-of-calls-in-half-open-state: 3
+        
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+  endpoint:
+    health:
+      show-details: always
+             

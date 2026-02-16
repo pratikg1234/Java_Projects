@@ -1,0 +1,34 @@
+package jdbcapp1com.jdbc.practice;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JdbcExample1 {
+//	static {
+//		try {//this part is automatic
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//		} catch (ClassNotFoundException e) {
+//			e.printStackTrace();
+//		}
+//	}
+	static Connection cn;
+	static String url ="jdbc:mysql://localhost:3306/test";
+	static String username="root";
+	static String password="root";
+	
+	public static void main(String[] args) {
+		cn = DriverManager.getConnection(url,username,password);
+	}
+	public static void addRecord() {
+		
+	}
+	public static void showAllRecords() {
+		
+	}
+	public static void deleteRecord() {
+		
+	}
+	public static void updateRecord() {
+		
+	}
+}

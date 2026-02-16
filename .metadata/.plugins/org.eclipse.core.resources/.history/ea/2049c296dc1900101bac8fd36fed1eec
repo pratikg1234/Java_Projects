@@ -1,0 +1,8 @@
+package com.java8.functional;
+
+public class GreetMain1 {
+	public static void main(String[] args) {
+		Greet g1 = new GreetImpl();
+		g1.wish("Pratik");
+	}
+}

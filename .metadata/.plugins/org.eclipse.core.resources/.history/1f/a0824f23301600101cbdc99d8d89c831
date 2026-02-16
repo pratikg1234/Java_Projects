@@ -1,0 +1,10 @@
+
+public class Address {
+	 private String city;
+     private int zipcode;
+	public Address() {
+	
+	}
+	
+     
+}

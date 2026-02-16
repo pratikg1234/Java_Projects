@@ -1,0 +1,29 @@
+package com.spring.data.jpa.ex2;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
+
+import jakarta.persistence.EntityManagerFactory;
+
+@Configuration
+@ComponentScan("com.spring.data.jpa.ex2")//if more than one package the we have to use {} curly brackets
+@EnableJpaRepositories("com.spring.data.jpa.ex2")
+public class JpaConfig1 {
+	
+	@Bean
+	public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+		JpaTransactionManager t = new JpaTransactionManager();
+		t.setEntityManagerFactory(entityManagerFactory);
+		return t;
+	}
+	@Bean
+	public LocalEntityManagerFactoryBean entityManagerFactory() {
+		LocalEntityManagerFactoryBean factoryBean= new LocalEntityManagerFactoryBean();
+		factoryBean.setPersistenceUnitName("test1");
+		return factoryBean;
+	}
+}

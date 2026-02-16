@@ -1,0 +1,27 @@
+package com.java8.functional;
+
+import java.util.Optional;
+
+public class OptionalExample2 {
+	public static void main(String[] args) {
+		opex3();
+	}
+	public static void opex1() {
+		Optional<Integer> op1 = Optional.empty();
+		op1.ifPresent((i)-> System.out.println("i="+i));
+	}
+	
+	public static void opex2() {
+		Optional<String> op2 = Optional.ofNullable(null);
+		op2.map((s)-> s.toLowerCase());
+		op2.map((s)-> {return s.toLowerCase();});
+		
+	}
+	
+	public static void opex3() {
+		    Optional<Customer> op3=Optional.of(new Customer(101, "Smith"));
+			op3.ifPresent(c-> System.out.println(c.getCustId()+"--"+c.getCustName()));
+		}
+	
+	
+}

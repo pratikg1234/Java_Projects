@@ -1,0 +1,16 @@
+package com.java8.functional;
+
+import java.util.Optional;
+
+public class OptionalExample {
+	public static void main(String[] args) {
+		Optional<String> o1 = new OptionalExample().of("Scott");
+		System.out.println(o1.get());
+		
+		Optional<String> o2 = Optional.empty();
+		System.out.println(o2.get());
+		
+		Optional<String> o3 = Optional.ofNullable(null);
+		System.out.println(o3.get());
+	}
+}
